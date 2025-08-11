@@ -1,0 +1,15 @@
+{
+  "name": "bash-ts-workshop",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node typescript/day2_types.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "ts-node": "^10.9.2",
+    "@types/node": "^22.5.1"
+  }
+}
+
+
