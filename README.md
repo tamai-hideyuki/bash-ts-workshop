@@ -1,5 +1,7 @@
 # Bash & TypeScript Workshop
 
+<!-- DIRTREE:START - Do not edit this section manually -->
+<!-- DIRTREE:END -->
 
 ## 基礎フェーズ（Day 1〜7）
 

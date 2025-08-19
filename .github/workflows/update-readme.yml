@@ -1,0 +1,59 @@
+name: Update README directory tree
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install tree
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tree
+
+      - name: Make script executable
+        run: chmod +x scripts/update-readme.sh
+
+      - name: Debug markers before
+        run: |
+          echo "== README markers =="
+          grep -n "DIRTREE:START" README.md || true
+          grep -n "DIRTREE:END"   README.md || true
+
+      - name: Generate README section (no commit in script)
+        env:
+          DEPTH: "3"
+          IGNORE_PATTERN: "node_modules|dist|build|.next|.git|coverage|.turbo|.vercel|tmp|vendor|scripts"
+        run: ./scripts/update-readme.sh
+
+      - name: Show diff
+        run: |
+          echo "== git status =="
+          git status
+          echo "== README diff (first 200 lines) =="
+          git diff -- README.md | sed -n '1,200p'
+
+      - name: Commit & Push if README changed
+        run: |
+          if ! git diff --quiet README.md; then
+            git add README.md
+            git -c user.name="github-actions[bot]" \
+                -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                commit -m "docs(readme): auto-update directory tree [skip ci]"
+            git push
+          else
+            echo "No changes in README.md"
+          fi
+          
