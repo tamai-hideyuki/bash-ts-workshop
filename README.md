@@ -1,6 +1,26 @@
 # Bash & TypeScript Workshop
 
 <!-- DIRTREE:START - Do not edit this section manually -->
+
+```text
+./
+├── .github/
+│   └── workflows/
+│       └── update-readme.yml
+├── .gitignore
+├── README.md
+├── bash/
+│   ├── day1_basics.sh*
+│   ├── day3_io.sh*
+│   └── day4_condition.sh*
+├── package.json
+├── tsconfig.json
+└── typescript/
+    └── day2_types.ts
+
+5 directories, 9 files
+```
+
 <!-- DIRTREE:END -->
 
 ## 基礎フェーズ（Day 1〜7）
