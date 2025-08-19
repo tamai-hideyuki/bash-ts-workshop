@@ -19,9 +19,10 @@
 └── typescript/
     ├── day2_types.ts
     ├── day5_functions.ts
-    └── day7_async.ts
+    ├── day7_async.ts
+    └── summary_basic.ts
 
-5 directories, 12 files
+5 directories, 13 files
 ```
 
 <!-- DIRTREE:END -->
