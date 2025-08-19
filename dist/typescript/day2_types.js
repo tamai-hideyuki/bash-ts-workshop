@@ -16,4 +16,5 @@ const animal = {
 // 基本的には　const を使う
 // 再起処理させたい時などはletを使う
 console.log({ dogName, age, isActive, catName, catAge, animal });
+//npx tsc でコンパイル （TS→JS） して、node dist/typescript/day2_types.js で実行
 //# sourceMappingURL=day2_types.js.map
