@@ -18,9 +18,10 @@
 ├── tsconfig.json
 └── typescript/
     ├── day2_types.ts
-    └── day5_functions.ts
+    ├── day5_functions.ts
+    └── day7_async.ts
 
-5 directories, 11 files
+5 directories, 12 files
 ```
 
 <!-- DIRTREE:END -->
