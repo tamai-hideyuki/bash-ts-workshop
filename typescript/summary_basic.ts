@@ -13,12 +13,33 @@
 //Promise.all で複数道具（複数リポジトリ）の情報を並列取得
 //try/catch で失敗時は「呪文失敗！」を表示
 /*
-アプローチのヒント（BaronTech式）
+アプローチのヒント
 1) まず“物語（ドメイン）”を一つ決めよ
 例：冒険者名簿 / 映画コレクション / レストラン注文。
 決める理由：型・関数・非同期処理に“意味”が宿る。
 決めたら登場要素を3つ並べる：User（誰） / Item（何） / Summary（結果）。
 */
+type SummaryBasicUser = {
+    id: string;
+    name: string;
+    level: number;
+    class: 'Warrior' | 'Mage' | 'Archer';
+}
+
+type Item = {
+    id: string;
+    name: string;
+    type: 'weapon' | 'armor' | 'accessory';
+    rarity: 'N' | 'R' | 'SR' | 'SSR' | 'SSSR';
+}
+
+type Summary = {
+    userId: string;
+    itemId: string;
+    obtainedAt: Date;
+    quantity: number;
+}
+
 /*
 2) 型の設計は「最小の三点セット」
 基本型：string | number | boolean を 意味のある名前で置く（例：title: string, level: number, active: boolean）。
