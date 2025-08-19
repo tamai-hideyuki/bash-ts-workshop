@@ -12,14 +12,15 @@
 ├── bash/
 │   ├── day1_basics.sh*
 │   ├── day3_io.sh*
-│   └── day4_condition.sh*
+│   ├── day4_condition.sh*
+│   └── day6_loops.sh*
 ├── package.json
 ├── tsconfig.json
 └── typescript/
     ├── day2_types.ts
     └── day5_functions.ts
 
-5 directories, 10 files
+5 directories, 11 files
 ```
 
 <!-- DIRTREE:END -->
