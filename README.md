@@ -21,9 +21,12 @@
     ├── day2_types.ts
     ├── day5_functions.ts
     ├── day7_async.ts
+    ├── day9/
+    │   ├── src/
+    │   └── tsconfig.json
+    ├── day9_modules.ts
     └── summary_basic.ts
-
-5 directories, 14 files
+7 directories, 16 files
 ```
 
 <!-- DIRTREE:END -->
