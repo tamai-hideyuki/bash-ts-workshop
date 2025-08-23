@@ -8,3 +8,6 @@ set -euo pipefail
 # 3. 置換処理
 
 
+# ディレクトリ配下から "ERROR" を含む行を行番号付きで探す
+
+grep -Rni --exclude-dir .git --include '*.log' 'ERROR' ./logs
