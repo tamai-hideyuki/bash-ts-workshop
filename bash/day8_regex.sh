@@ -51,3 +51,4 @@ sed -i'' -E '/# START/,/# END/ TUNE/ s/(max_connections\s*=\s*)[0-9]+/\1200/' ap
  awk -v k="timeout" -v v="3000" -F= '
   $1 ~ "^[[:space:]]*"k"[[:space:]]*$" {print $1"="v; next} {print}
 ' config.env > config.env.new && mv config.env.new config.env
+
