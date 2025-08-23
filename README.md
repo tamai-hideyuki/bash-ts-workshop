@@ -13,16 +13,21 @@
 │   ├── day1_basics.sh*
 │   ├── day3_io.sh*
 │   ├── day4_condition.sh*
-│   └── day6_loops.sh*
+│   ├── day6_loops.sh*
+│   └── day8_regex.sh*
 ├── package.json
 ├── tsconfig.json
 └── typescript/
     ├── day2_types.ts
     ├── day5_functions.ts
     ├── day7_async.ts
+    ├── day9/
+    │   ├── src/
+    │   └── tsconfig.json
+    ├── day9_modules.ts
     └── summary_basic.ts
 
-5 directories, 13 files
+7 directories, 16 files
 ```
 
 <!-- DIRTREE:END -->
