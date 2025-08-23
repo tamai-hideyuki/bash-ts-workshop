@@ -11,3 +11,6 @@ set -euo pipefail
 # ディレクトリ配下から "ERROR" を含む行を行番号付きで探す
 
 grep -Rni --exclude-dir .git --include '*.log' 'ERROR' ./logs
+
+# IPアドレスだけを抽出
+grep -RhoE '([0-9]{a,3}\.){3}[0-9]{1,3}' ./logs | sort -u
