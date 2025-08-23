@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# ログや設定ファイルから必要情報を抽出
+# 1. grep/sed/awk の活用
+# 2. 日付抽出
+# 3. 置換処理
+
+
