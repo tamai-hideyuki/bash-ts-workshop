@@ -15,7 +15,12 @@
 │   ├── day4_condition.sh*
 │   ├── day6_loops.sh*
 │   └── day8_regex.sh*
+├── original/
+│   └── tests/
+│       └── cases/
 ├── package.json
+├── test/
+│   └── LT.ts
 ├── tsconfig.json
 └── typescript/
     ├── day2_types.ts
@@ -27,7 +32,7 @@
     ├── day9_modules.ts
     └── summary_basic.ts
 
-7 directories, 16 files
+11 directories, 17 files
 ```
 
 <!-- DIRTREE:END -->
